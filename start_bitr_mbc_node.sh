@@ -63,7 +63,3 @@ END
 sleep 2
 
 pm2 start app.js
-
-sleep 2
-
-pm2 logs
