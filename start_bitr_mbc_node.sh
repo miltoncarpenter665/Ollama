@@ -62,4 +62,4 @@ END
 
 sleep 2
 
-pm2 start app.js
+node app.js
