@@ -1,4 +1,16 @@
 #!/bin/bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.2/install.sh | bash
+sleep 2
+
+# in lieu of restarting the shell
+\. "$HOME/.nvm/nvm.sh"
+
+nvm install 23
+sleep 2
+
+nvm current
+sleep 2
+
 npm install pm2 -g
 sleep 2
 pm2 set pm2:sysmonit true
